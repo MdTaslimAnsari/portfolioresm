@@ -1,0 +1,345 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ font-family: 'Poppins', sans-serif; 
+/* font-family: 'Roboto', sans-serif; */
+/* font-family: 'Rubik', sans-serif; */
+}
+:root{
+    --sidebgcolor:#040b14;
+    --themcolor:#0c8488;
+    --iconbgcolor:#2C2F3F;
+    --textcolor:#525252;
+    --bgcolor:#F7F7F7;
+}
+
+
+/* Header section */
+
+
+header{
+    height: 100vh;
+    width: 300px;
+    padding: 15px 30px;
+    background-color: var(--sidebgcolor);
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    transition: 0.4s;
+    z-index: 99;
+}
+
+header .profile{
+text-align: center;
+margin: 10px 0;
+
+}
+header .profile img{
+    width: 150px;
+    border-radius: 40%;
+    border: 10px solid var(--iconbgcolor);
+    position: relative;
+    
+}
+header .profile img::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: aqua;
+}
+
+header .profile h1{
+    color: white;
+    font-weight: 600;
+}
+header .profile .social-icon a{
+ display: inline-block;
+ width: 40px;
+ height: 40px;
+ font-size: 25px;
+ border-radius: 50%;
+ text-align: center;
+ line-height: 41px;
+ color: white;
+ background-color: var(--iconbgcolor);
+}
+header .profile .social-icon a:hover{
+    background-color: white;
+}
+header nav{
+    margin-top: 27px;
+}
+header nav ul li{
+    list-style: none;
+    color: white;
+}
+header nav ul li a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 10px;
+    margin: 7px 0;
+    color:white;
+    font-size: 18px;
+    letter-spacing: 0.6px;
+    font-weight: 800px;
+}
+header nav ul li a i{
+    margin-right: 10px;
+    font-size: 20px;
+    transition: 0.5s;
+    
+}
+header nav ul li a:hover i{
+    color: var(--themcolor);
+}
+header nav ul li .active i{
+   background-color:var(--themcolor); 
+}
+#menubtn{
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    font-size: 20px;
+    color: wheat;
+    background-color: var(--themcolor);
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 42px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgb(216, 190, 190);
+    z-index: 999;
+    display: none;
+}
+/* Main section */
+main{
+    margin-left: 300px;
+    background-color: var(--bgcolor);
+}
+
+/* Home section */
+
+
+#home{
+    height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.7)),url(/bg1.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 70px;
+    position: relative;
+}
+#home .home-row h1{
+    font-size: 57px;
+    letter-spacing: -2px;
+    color: white;
+    margin-bottom: 7px;
+    line-height: 70px;
+}
+#home .home-row h1 span{
+    color: rgb(240, 134, 217);
+}
+#home .home-row p{
+    font-size: 30px;
+    color: white;
+}
+#home .home-row p span{
+    color: orangered;
+}
+#home .home-row p span{
+    border-bottom: 4px solid rgb(228, 194, 120);
+}
+
+/* About section */
+
+
+.about{
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    padding-top: 100px;
+}
+.left h1{
+    font-size: 43px;
+    text-align: center;
+    margin-bottom: 40px;
+   
+}
+.left{
+    flex-basis: 50%;
+    text-align: center;
+}
+.left a{
+    text-decoration: none;
+    padding: 7px 40px;
+    background-color: #525252;
+    color: white;
+    border-radius: 30px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.right{
+    flex-basis: 50%;
+    margin-left: 0px;
+}
+.right img{
+    width: 70%;
+    height: 50%;
+    border-radius: 40px;
+    margin-left: 40px; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.right img:hover{
+    border: 8px solid gray;
+}
+
+
+/* Skills Section */
+#skills{
+    padding-top: 50px;
+}
+
+/* h1 class skl */
+.skl{
+    font-size: 43px;
+    text-align: center;
+    position: relative;
+}
+.skl::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 190px;
+    height: 4px;
+    background-color: var(--themcolor);
+
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    grid-gap: 30px;
+    text-align: center;
+}
+.col h1{
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: orangered;
+}
+
+.grid .col{
+    transition: 1s;
+    padding: 30px;
+}
+.grid .col:hover{
+    background-color: lightcoral;
+    transform: scale(.8);
+    
+}
+
+/* Project section */
+#project{
+    margin-top: 130px;
+    text-align: center;
+}
+#project h1{
+    font-size: 34px;
+}
+.project{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 150px 0px;
+}
+.project .box{
+    width: 320px;
+    height: 300px;
+    box-shadow: 0px 0px 120px 0px hsl(12, 100%, 88%);
+}
+.project .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+
+/* contact */
+#Contact{
+    width: 100%;
+   background-color: #525252;
+
+}
+.content{
+    text-align: center;
+    padding: 30px;
+    color: white;
+}
+.contact-box{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+.box1{
+    flex-basis: 50%;
+    color: white;
+    padding-top: 40px;
+    padding-left: 40px;
+    
+}
+.box2{
+    max-width: 300px;
+    max-height: 400px;
+    background-color: white;
+    flex-basis: 50%;
+    padding: 30px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+}
+.box2 input{
+    width: 100%;
+    height: 50px;
+}
+.box{
+    display: flex;
+    align-items: cent;
+    margin-top: 8px;
+}
+.box img{
+    width: 44px;
+    margin-right: 10px;
+}
+.box2 input{
+border-top: none;
+border-left:none ;
+border-right: none;
+}
+.box2 textarea{
+    width: 100%;
+    margin-top: 10px;
+    border-top: none;
+border-left:none ;
+border-right: none;
+}
+.box2 button{
+    padding: 10px 30px;
+    background-color: pink;
+    border-radius: 20px;
+    border: none;
+}
+.box2 button:hover{
+    transform: scale(1.2);
+    background-color: #e48e8e;
+}

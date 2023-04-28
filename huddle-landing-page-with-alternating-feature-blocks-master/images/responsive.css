@@ -1,0 +1,47 @@
+@media(max-width:1280px){
+    .flexe{
+        padding-top: 80px;
+    }
+}
+@media(max-width:992px){
+    .flex{
+        flex-direction: column-reverse;
+    }
+    .flexe{
+        padding-top: 80px;
+    }
+    .left{
+       text-align: center;
+        margin-bottom: 37px;
+        flex-basis: 100%;
+    }
+    .right{
+        flex-basis: 100%;
+    }
+}
+@media(max-width: 768px){
+    .flexe{
+      flex-direction: column;
+      text-align: center;
+    }
+    .box{
+        top: -16%;
+    }
+    .first{
+        margin-top: 100px; 
+     }
+}
+@media(max-width:576px){
+    .first{
+       margin-top: 100px; 
+    }
+    .flex h1{
+        font-size: 36px;
+    }
+    .flex p{
+        font-size: 17px;
+    }
+    footer{
+        text-align: center;
+    }
+}

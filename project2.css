@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif;
+}
+#header{
+    height: 100vh;
+    background-image: url(/image2/images/background.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container{
+    margin-right: 100px;
+    margin-left: 100px;
+}
+.logo{
+    margin-top: 30px;
+    width: 100px;
+}
+.header-text{
+    max-width: 350px;
+    margin-top: 135px;
+}
+h1{
+    font-size: 34px;
+}
+.squre{
+    height: 12px;
+    width: 12px;
+    background: coral;
+    margin: 15px 0;
+    display: inline-block;
+}
+.common-btn{
+   padding: 18px 40px;
+   background: transparent;
+   outline: none;
+   border: 2px solid palevioletred; 
+   font-weight: bold;
+   cursor: pointer;
+}
+p{
+    font-size: 15px;
+    line-height: 18px;
+    color: #777;
+}
+.header-text button{
+    margin-top: 20px;
+    margin-bottom: 65px;
+}
+.line-1{
+    width: 15px;
+    height: 15px;
+    background: coral;
+    display: inline-block;
+}
+.line-2{
+    width: 80px;
+    height: 3px;
+    background: coral;
+    display: inline-block;
+}
+.line-3{
+    width: 60px;
+    height: 2px;
+    background: rgb(15, 8, 5);
+    display: inline-block;
+}
+#sideNav{
+width: 250px;
+height: 100vh;
+position: fixed;
+right: -250;
+top: 0;
+background: rgb(250, 131, 131);
+z-index: 2;
+transition: 2s;
+}
+#sideNav ul li{
+    list-style: none;
+    margin: 50px;  
+}
+#sideNav ul li a{
+    text-decoration: none;
+    color: white;
+}
+#menuBtn{
+    width: 50px;
+    position: fixed;
+    right: 65px;
+    top: 35px;
+    z-index: 2;
+    cursor: pointer;
+}
